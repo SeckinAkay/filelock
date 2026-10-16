@@ -24,6 +24,25 @@ Bu betik, klasörlerinizi sadece gizlemekle kalmaz; onları Windows'un gözünde
 4. **İlk Kurulumda:** Ekrandaki talimatları izleyerek kasanız için bir **Şifre** ve **Klasör Adı** belirleyin.
 5. Oluşan klasörün içine gizlemek istediğiniz dosyaları yükleyin ve programı tekrar açarak **`E`** tuşu ile kilitleyin.
 
+6. Bat dosyam bozulur yada kayıp olursa. Ayar dosyası sistem tarafından görünmez yapıldığı için normal şartlarda klasör seçeneklerinden "Gizli dosyaları göster" deseniz bile klasör içinde belirmeyecektir.
+Bu gizli ayar dosyasına (.kasa_ayarlari.dat) erişmek, içindeki şifreyi manuel olarak görmek veya düzenlemek için kullanabileceğiniz en pratik 2 yöntemi aşağıda bulabilirsiniz:
+
+1. Yöntem: Doğrudan Not Defteri ile Açmak (En Hızlısı)
+
+Dosya gezgininde görünmesini beklemeden, yerleşik Windows komutuyla dosyayı direkt Not Defteri'nde açabilirsiniz:
+1. .bat dosyanızın bulunduğu klasörün içindeyken klavyenizden Windows Tuşu + R kombinasyonuna basarak Çalıştır penceresini açın.
+2. Açılan kutucuğun içine notepad .kasa_ayarlari.dat yazın ve Enter'a basın.
+3. Dosya anında Not Defteri ile açılacaktır. İçerisinde Sifre=... ve Klasor=... şeklinde ayarlarınızı görebilir ve düzenleyebilirsiniz.
+
+2. Yöntem: Komut İstemi (CMD) ile Görünür Yapmak
+
+Eğer dosyayı klasörün içinde normal bir dosya gibi fiziksel olarak görmek ve üzerinde işlem yapmak istiyorsanız:
+1. .bat dosyanızın olduğu klasörün boş bir yerine tıklayın.
+2. Üstteki adres çubuğuna (klasör yolunun yazdığı yere) cmd yazıp Enter'a basın. O klasör dizininde siyah komut ekranı açılacaktır.
+3. Şu komutu yapıştırıp Enter'a basın:
+4. attrib -h -s .kasa_ayarlari.dat
+
+
 ---
 
 ## 🛠️ Kod İçeriği
